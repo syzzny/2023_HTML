@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>로그인 페이지 입니다</h1>
+    <table style="border: solid 2px #000">
+        <tr>
+            <td>사용자:</td>
+            <td><input type="text" /></td>
+            <td rowspan="2"><input type="submit" /></td>
+        </tr>
+        <tr>
+            <td>비밀번호:</td>
+            <td><input type="password" /></td>
+        </tr>
+    </table>
+    <a href="#">비밀번호를 잊어버렸나요?</a>
+    <hr />
+    <div style="border: solid #000; width: 300px">
+        <div>
+            <label for="">사용자</label>
+            <input type="text" name="" id="" />
+        </div>
+        <div>
+            <label for="">비밀번호</label>
+            <input type="password" name="" id="" />
+        </div>
+    </div>
+    <input type="submit" value="전송" />
+    <hr />
+    <h1>설문조사</h1>
+    <div>
+        <label>성별을 체크해주세요</label><br />
+        <input type="radio" name="gender" value="남" /> 남
+        <input type="radio" name="gender" value="여" /> 여
+    </div>
+    <div>
+        <label>음식을 체크해주세요</label><br>
+        <input type="checkbox" name="food" value="한식"/><span>한식</span><br>
+        <input type="checkbox" name="food" value="일식"/><span>일식</span><br>
+        <input type="checkbox" name="food" value="중식"/><span>중식</span><br>
+        <input type="checkbox" name="food" value="양식"/><span>양식</span><br>
+    </div>
+    <div>
+        <p>기타의견을 남겨주세요</p>
+        <textarea name="memo" cols="35" rows="7"></textarea>
+    </div>
+    <h1>숫자가 들어간 설문조사</h1>
+    <ol>
+        <li>
+            <p>성별을 체크해주세요</p>
+            <input type="radio" name="gender" value="man">남
+            <input type="radio" name="gender" value="woman">여
+        </li>
+        <li>
+            <p>음식을 선택해주세요</p>
+            <input type="checkbox" name="menu" value="한식">한식 <br>
+            <input type="checkbox" name="menu" value="한식">한식 <br>
+            <input type="checkbox" name="menu" value="한식">한식 <br>
+            <input type="checkbox" name="menu" value="한식">한식 <br>
+        </li>
+        <li>
+            <p>기타 의견을 남겨주세요</p>
+            <textarea name="memo" id="" cols="35" rows="7"></textarea>
+        </li>
+    </ol>
+</body>
+
+</html>

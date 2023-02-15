@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>input 요소</h1>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Safari"></option>
+    </datalist>
+    <p>datalist는 input의 값중에 몇개를 리스트로 띄워주는 역할
+        input 태그와 datalist 태그는 list와 id로 연결
+    </p>
+    <keygen>
+        <p>
+            keygen은 지금 지원하지 않는 태그<br>
+            웹의 발전에 따라서 태그들이 생성되거나 쓰지않는다
+        </p>
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)"> <!--parseInt = 정수부분을 구분해서 가져옴-->
+            <input type="text" id="a" size="5" value="0"> +
+            <input type="text" id="b" size="5" value="0"> =
+            <output name="result">0</output>
+        </form>
+        <p>
+            output 태그는 form의 oninput 속성과 함께 사용한다 <br>
+            oinput에 들어간 자바스크립트의 명령어를 계산해서 쓸수있다
+            보통은 자바스크립트를 script 태그 안에서 사용한다
+        </p>
+
+        <h1>input 추가 타입</h1>
+        <label for="">number</label>
+        <input type="number" step="10" value="0" min="0" max="100">
+        <!--모르는/ 처음보는 속성이 있을때 그 태그를 mdn에 검색해서 내용을 확인할 수 있다
+        사이트를 검색해서 들어갈수도 있지만 태그에 마우스를 올려서 들어갈수도있다-->
+
+        <lavel for="">range: 범위</lavel>
+        <input list="makers" type="range" min="0" max="10" value="0">
+        <datalist>
+            <option value="0"></option>
+            <option value="5"></option>
+            <option value="10"></option>
+        </datalist>
+        <p>
+            range 타입은 값을 슬라이더를 통해서 선택
+            값은 자바스크립트를 통해서 가져오거나 form을 통해서 값을 전달할때 알수있다
+        </p>
+        <label for="">color</label>
+        <input type="color" value="#ff0000">
+        <label for=""date: 날짜입력></label>
+        <input type="date" value="2023-02-13" min="2023-02-13">
+        <label for="">time</label>
+        <input type="time" value="23:00"> <br>
+        <label for="">datetime-local: 날짜와 시간</label>
+        <input type="datetime-local" value="2023-02-13 23:00"><br>
+        <label for="">month: 연도와 월</label>
+        <input type="month" value="2023-02"><br>
+        <label for="">week: 연도와 주</label>
+        <input type="week" value="2023-W03">
+
+        <form action="" autocomplete="off" novalidate>
+            <label for="">email</label>
+            <input type="email" name= "email">
+            <input type="submit" value="제출">
+            <p>email의 경우는 이메일의 형태를 갖추고있는지 유효성 검사를 해준다(validation)</p>
+            <p>
+                form에 novalidate 속성이 들어가게 되면 유연성 검사를 하지않는다
+            </p>
+
+            <label for="">URL</label>
+            <input type="url">
+            <input type="submit" value="제출"><br>
+
+            <label for="">tel: 전화번호</label>
+            <input type="tel"><br>
+            <label for="">search: 검색어</label>
+            <input type="text">
+        </form>
+        <h1>input 요소의 속성</h1>
+        <input type="text" autofocus placeholder="이름을 적어주세요" required>
+        <input type="submit" value="제출">
+        <p>
+            required는 값이 없을때 서버로 보내는 것을 막는 속성이다
+        </p>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.naver.com/" target="_blank"><img src="img/naver.png" alt=""></a>
+    <p>
+        a태그의 기능(하이퍼링크)와 이미지태그의 기능을 같이 쓰고 싶다면
+        태그안에 태그를 넣어서 사용할수 있다 <br>
+        범위를 생각해서 큰 범위로 쓸 기능으로 감싸주면 된다<br>
+        태그안의 속성중 특정 태그만 쓸수 있는 속성이있다
+    </p>
+    <hr>
+    <h1>리스트</h1>
+    <!--ul 순서가 없는 리스트-->
+    <ul>
+        <!--각각의 리스트는 li 표현-->
+        <li>순서가 없는 리스트</li>
+        <li>순서가 없는 리스트</li>
+    </ul>
+    <!--ol 순서가 있는 리스트-->
+    <ol>
+        <li>첫번째</li>
+        <li>두번째</li>
+    </ol>
+    <!-- dl 정의 리스트-->
+    <dl>
+        <!--dt 정의 제목(title)-->
+        <dt>HTML</dt>
+        <!--dd 정의 정보(data)-->
+        <dd>하이퍼텍스트 마크업 언어</dd>
+        <dt>링크</dt>
+        <dd>하이퍼링크로 다른 페이지로 이동할 수 있다</dd>
+    </dl>
+    <hr>
+    <h1>테이블 표</h1>
+    <table style="border: solid 1px #000;">
+        <tr style="border: solid 1px red;">
+            <th colspan="1" style="border: solid 1px blue">
+                제목
+            </th>
+        </tr>
+        <tr>
+            <td style="border: solid 1px blue" rowspan="2">내용이 들어갑니다</td>
+            <td>두번째 내용입니다</td>
+        </tr>
+    </table>
+    <p>
+        테이블 태그는 tr로 열을 작성하고 td로 안에 셀을 만든다 <br>
+        tr: table row(열), td: table data(셀), 
+        th: table header(h1 태그처럼 생각) <br>
+        colspan: 오른쪽에 있는 셀을 확장 <br>
+        rowspan: 아래쪽에 있는 셀을 확장
+    </p>
+    <hr>
+    <table style="border: solid 1px #000;" >
+    <tr>
+        <td style="border: solid 1px #000; text-align: center;" colspan="3">
+            A반
+        </td>
+    </tr>
+    <tr>
+        <td style="border: solid 1px #000;">
+            에밀리
+        </td>
+        <td style="border: solid 1px #000;">
+            토비
+        </td>
+        <td style="border: solid 1px #000;">
+            제임스
+        </td>
+    </tr>
+    <tr>
+        <td style="border: solid 1px #000;">
+            16
+        </td>
+        <td style="border: solid 1px #000;">
+            14
+        </td>
+        <td style="border: solid 1px #000;">
+            10
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th style="background-color: bisque;">반</th>
+        <th style="background-color: bisque;" colspan="3">A반</th>
+    </tr>
+    <tr>
+        <td style="background-color: burlywood;" rowspan="2">학생</td>
+        <td style="background-color: burlywood;">에밀리</td>
+        <td style="background-color: burlywood;">토비</td>
+        <td style="background-color: burlywood;">제임스</td>
+    </tr>
+    <tr>
+        <td style="background-color: beige;">16</td>
+        <td style="background-color: beige;">14</td>
+        <td style="background-color: beige;">10</td>
+    </tr>
+</table>
+</body>
+</html>
